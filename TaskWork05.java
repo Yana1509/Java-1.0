@@ -20,6 +20,9 @@ public class TaskWork05 {
             case '*': ans = num1 * num2;
                 break;
             case '/': ans = num1 / num2;
+            if (num2 == 0) {
+                System.out.printf("\nОшибка\n");
+            }
                 break;
             default:  System.out.printf("Ошибка");
                 return;

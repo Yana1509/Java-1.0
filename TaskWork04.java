@@ -12,7 +12,7 @@ public class TaskWork04 {
         x = reader.nextDouble();
         y = reader.nextDouble();
         z = reader.nextDouble();
-        result = ((x + y + z) / 2);
+        result = ((x + y + z) / 3);
         System.out.println("\nСреднее арифметическое: " + result);
         result2 = result / 2;
         System.out.println("Среднее арифметическое, поделенное на два с округлением в меньшую сторону: " + Math.floor(result2));
