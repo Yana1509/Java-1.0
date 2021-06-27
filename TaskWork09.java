@@ -11,7 +11,6 @@ public class TaskWork09 {
         arraySize = reader.nextInt();
 
         double[] myArray = new double[arraySize];
-        arraySize = myArray.length; // значение с клавиатуры устанавливаем как размер массива
 
         System.out.println("Введите значения элементов массива через пробел: "); // присваиваем элементам значения
         for (int i = 0; i < myArray.length; i++) {
@@ -25,16 +24,14 @@ public class TaskWork09 {
             for (int i = 0; i < myArray.length; i++) {
                 sum += myArray[i];
             }
-            average = sum / myArray.length; {
-            System.out.println("среднее арифметическое чисел: " + sum / myArray.length); }
+            average = sum / myArray.length;
+            System.out.println("среднее арифметическое чисел: " + sum / myArray.length);
 
             // произведите вывод массива на экран, где каждый элемент массива умножается на среднее арифметическое
-            for (int i = 0; i < myArray.length; i++) {
+            for (int i = 0; i < myArray.length; i++)
 
                 System.out.println(myArray[i] +  " * " + sum / myArray.length + " = " + myArray[i] * sum / myArray.length);
 
-
-            }
         }
     }
 }
