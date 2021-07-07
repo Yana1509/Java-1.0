@@ -7,9 +7,9 @@ public class TaskWork10 {
         int n; //количество столбцов в матрице
 
         Scanner reader = new Scanner(System.in);
-        System.out.print("Введите количество столбцов матрицы: ");
-        m = reader.nextInt();
         System.out.print("Введите количество строк матрицы: ");
+        m = reader.nextInt();
+        System.out.print("Введите количество столбцов матрицы: ");
         n = reader.nextInt();
         int[][] matrix = new int[m][n];
 
@@ -19,11 +19,13 @@ public class TaskWork10 {
         for (j = 0; j < m; j++) {
             for (i = 0; i < n; i++) {
                 matrix[j][i] = reader.nextInt();
-                if (i == 0)
-                break;
+                System.out.print(matrix[j][i]);
             }
-            System.out.println(matrix[j][i] + " * 3 = " + matrix[j][i] * 3 + ";");
+            System.out.println();
             }
+        for (i = 0; i < n; i++) {
+            System.out.println(matrix[0][i] + " * 3 = " + matrix[0][i] * 3 + ";");
+        }
         }
 
 }
