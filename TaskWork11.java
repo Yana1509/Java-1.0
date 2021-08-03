@@ -2,29 +2,27 @@ import java.util.Scanner;
 
 public class TaskWork11 {
     public static void main(String[] args) {
-        Double m; // первое число
-        Double n; //второе число
+        String str;
 
+// Ввести первое  число с клавиатуры и записать его в строковую переменную
         Scanner reader = new Scanner(System.in);
         System.out.print("Введите первое число: ");
-        m = reader.nextDouble();
-        String str1 = String.valueOf(m);
+        int m = reader.nextInt();
+        str = Integer.toString(m);
 
+// Ввести второе число с клавиатуры и сохранить его в целочисленную переменную типа int
         System.out.print("Введите второе число: ");
-        n = reader.nextDouble();
-        int a = n.intValue();
+        int n = reader.nextInt();
 
-            if (m < n) {
+        Integer x = Integer.parseInt(str);
 
-                System.out.println("Большее число: " + n);
-            } else if (m > n) {
-                System.out.println("Большее число: " + m);
-            }
-            else {
-                System.out.println("Числа равны");
-            }
-            // 4. Выведите также меньшее число на экран, предварительно переконвертировать его в тип double.
-            // оба числа представляют разный тип данных, пробовала ввести переменную min и переконвертировать ее, не получается
+// Сравнить 2 числа и вывести большее на экран
+        int max = Math.max(n, x);
+        System.out.println("Большеe число из них: " + max);
+
+// Выведите также меньшее число на экран, предварительно переконвертировать его в тип double
+        double min = Math.min(n, x);
+        System.out.println("Меньшее число из них: " + min);
 
     }
 }
