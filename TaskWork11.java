@@ -4,7 +4,7 @@ public class TaskWork11 {
     public static void main(String[] args) {
         String str;
 
-// Ввести первое  число с клавиатуры и записать его в строковую переменную
+// Ввести первое  число с клавиатуры и записать его в строковую переменную:
         Scanner reader = new Scanner(System.in);
         System.out.print("Введите первое число: ");
         int m = reader.nextInt();

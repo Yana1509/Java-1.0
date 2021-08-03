@@ -1,7 +1,7 @@
 public class TaskWork14 {
     public static void main(String[] args) {
 
-        // Напишите программу, заполняющую массив из 15 элементов рандомными значениями в диапазоне от -20 до 20
+        // Напишите программу, заполняющую массив из 15 элементов рандомными значениями в диапазоне от -20 до 20:
         int[] array = new int[15];
         for (int i = 0; i < array.length; i++) {
             array[i] = (int) Math.round((Math.random() * 40) - 20);

@@ -2,7 +2,7 @@ import java.util.Scanner;
 
 public class TaskWork12 {
     public static void main(String[] args) {
-// Напишите программу, принимающую на вход строку “I like Java!!!”, которая будет выполнять следующие действия:
+// Напишите программу, принимающую на вход строку “I like Java!!!”, которая будет выполнять следующие действия
         String a;
 
         Scanner reader = new Scanner(System.in);

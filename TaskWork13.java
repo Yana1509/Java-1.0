@@ -2,7 +2,7 @@ import java.util.Scanner;
 
 public class TaskWork13 {
     public static void main(String[] args) {
-// Напишите программу, где пользователь должен ввести строку из слов, разделенных пробелами. Например: “I love java 8 Я люблю java 14 core1”. Выполните следующие действия:
+// Напишите программу, где пользователь должен ввести строку из слов, разделенных пробелами. Выполните следующие действия:
         Scanner reader = new Scanner(System.in);
         System.out.print("Введите слова через пробел: ");
         String words = reader.nextLine();
