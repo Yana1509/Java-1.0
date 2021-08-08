@@ -23,7 +23,7 @@ public class TaskWork12 {
         System.out.println("Строка заканчивается '!!!': "+ ends);
 
         // Если 3 предыдущих условия верны, выведите данную строку, преобразованную к верхнему регистру.
-        if (include == true & starts == true & ends == true) {
+        if (include & starts & ends) {
                     System.out.println(a.toUpperCase());
         //Замените все символы ‘a’ на ‘о’ и введите подстроку “Jovo” на экран  (используйте substring()).
             String result = a.replace("a",  "o");

@@ -7,18 +7,16 @@ public class TaskWork13 {
         System.out.print("Введите слова через пробел: ");
         String words = reader.nextLine();
 
-        // Выведите слова, состоящие только из латиницы
-        words = words.replaceAll("[^A-Za-z0-9 ]", "");
-        System.out.println(words);
-
-        // Выведите количество этих слов
         String[] str = words.split(" ");
         int result = 0;
         for (int i = 0; i < str.length; i++) {
-            if (str[i].length() >= 1)
+            if (str[i].matches("[a-zA-Z]+")) {
+
+                System.out.print(str[i] + " ");
                 result++;
+            }
         }
-        System.out.println("Количество слов: " + result);
+        System.out.println("\nКоличество слов: " + result);
 
 
     }
